@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    
+}
+
+.buttons{
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+button{
+    display: inline-block;
+    width: 150px;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+#myVar{
+    background-color: rgb(235, 126, 126);
+}
+
+#myLet{
+    background-color: rgb(126, 235, 126);
+}
+#myConst{
+    background-color: rgb(126, 126, 235);
+}
+
+.outPut{
+    background-color: #444;
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    color: #fff;
+    display: none;
+ }
+
+.in{
+    margin-left: 40px;
+}
+.in1{
+    margin-left: 68px;
+}
+.in2{
+    margin-left: 95px;
+}
+
+.demo{
+    display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>variables</title>
+</head>
+<body>
+    <div class="buttons">
+    <button id="myVar">var</button>
+    <button id="myLet">let</button>
+    <button id="myConst">const</button>
+  </div>
+  <ul class="demo">
+      <li>We can declare variable with 'var' without intialization.</li>
+      <p class="in">Ex: var x;</p>
+      <li>We can reassign variable with 'var'.</li>
+      <p class="in">Ex: var k = 10;</p> 
+      <p class="in2">k = 12;</p>
+      <li>We can re-declare variable with 'var'.</li>
+      <p class="in">Ex: var x = 3;</p> 
+      <p class="in1">var x = 4;</p>
+  </ul>
+
+  <ul class="demo">
+    <li>We can declare variable with 'let' without intialization.</li>
+    <p class="in">Ex: let x;</p>
+    <li>We can reassign variable with 'let'.</li>
+    <p class="in">Ex: let k = 10;</p> 
+    <p class="in2">k = 12;</p>
+    <li>We cannot re-declare variable with 'let'.</li>
+</ul>
+
+<ul class="demo">
+    <li>We cannot declare variable with 'const' without intialization.</li>
+    <li>We cannot reassign variable with 'const'.</li>
+    <li>We cannot re-declare variable with 'const'.</li>
+</ul>
+
+
+  <div class="outPut">
+
+  </div>
+
+  <script>
+      const outPut = document.querySelector('.outPut');
+
+    const buttons = document.querySelectorAll('button');
+
+    const demos = document.querySelectorAll('.demo');
+ 
+      for(let i = 0; i < buttons.length; i++){
+          buttons[i].addEventListener('click', function(){
+              outPut.innerHTML = demos[i].innerHTML;
+              outPut.style.display = 'block';
+          })
+      }
+
+      </script>
+</body>
+</html>
